@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
   <FIToFICstmrCdtTrf>
     <GrpHdr>
       <MsgId>FX-MULTI-303</MsgId>
-      <CreDtTm>2025-01-18T15:30:00Z</CreDtTm>
+      <CreDtTm>2025-01-18T15:30:00+00:00</CreDtTm>
       <NbOfTxs>1</NbOfTxs>
       <SttlmInf>
         <SttlmMtd>INDA</SttlmMtd>
@@ -20,25 +20,24 @@
         <SvcLvl>
           <Cd>SEPA</Cd>
         </SvcLvl>
-        <ReqdExctnDt>2025-01-18</ReqdExctnDt>
-      </PmtTpInf>
+        </PmtTpInf>
       <IntrBkSttlmAmt Ccy="USD">875000.00</IntrBkSttlmAmt>
-      <ChrgBr>SHA</ChrgBr>
+      <IntrBkSttlmDt>2025-01-18</IntrBkSttlmDt><ChrgBr>SHAR</ChrgBr>
 
-        <FxInf>
-          <XchgRate>1.0875</XchgRate>
-          <CtrctId>FX-USD-EUR-303</CtrctId>
-        </FxInf>
-
+        <InstgAgt><FinInstnId><BICFI>EURODEMMXXX</BICFI></FinInstnId></InstgAgt><InstdAgt><FinInstnId><BICFI>PRIMSGSGXXX</BICFI></FinInstnId></InstdAgt><IntrmyAgt1>
+          <FinInstnId>
+            <BICFI>CITIUS33XXX</BICFI>
+          </FinInstnId>
+        </IntrmyAgt1>
 
       <Dbtr>
         <Nm>EuroTech Manufacturing GmbH</Nm>
         <PstlAdr>
           <StrtNm>Industriestrasse 5</StrtNm>
-          <TwnNm>Munich</TwnNm>
-          <Ctry>DE</Ctry>
           <PstCd>80331</PstCd>
-        </PstlAdr>
+        <TwnNm>Munich</TwnNm>
+          <Ctry>DE</Ctry>
+          </PstlAdr>
       </Dbtr>
       <DbtrAcct>
         <Id>
@@ -51,13 +50,7 @@
         </FinInstnId>
       </DbtrAgt>
 
-        <IntrmyAgt1>
-          <FinInstnId>
-            <BICFI>CITIUS33XXX</BICFI>
-          </FinInstnId>
-        </IntrmyAgt1>
-
-      <CdtrAgt>
+        <CdtrAgt>
         <FinInstnId>
           <BICFI>PRIMSGSGXXX</BICFI>
         </FinInstnId>
@@ -66,10 +59,10 @@
         <Nm>Pacific Rim Logistics</Nm>
         <PstlAdr>
           <StrtNm>8 Harbour Drive</StrtNm>
-          <TwnNm>Singapore</TwnNm>
-          <Ctry>SG</Ctry>
           <PstCd>117540</PstCd>
-        </PstlAdr>
+        <TwnNm>Singapore</TwnNm>
+          <Ctry>SG</Ctry>
+          </PstlAdr>
       </Cdtr>
 
       <CdtrAcct>

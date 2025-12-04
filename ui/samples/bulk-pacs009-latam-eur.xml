@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.009.001.08">
   <FICdtTrf>
     <GrpHdr>
       <MsgId>LATAM-EUR-020</MsgId>
       <CreDtTm>2025-01-15T16:00:00-03:00</CreDtTm>
       <NbOfTxs>1</NbOfTxs>
-      <TtlIntrBkSttlmAmt Ccy="EUR">7800000.00</TtlIntrBkSttlmAmt>
       <SttlmInf>
         <SttlmMtd>INDA</SttlmMtd>
       </SttlmInf>
@@ -17,33 +16,25 @@
         <TxId>BRASBRRJ-LATAM-020</TxId>
         <UETR>91fb14da-2532-4ec3-859b-759a4fca2c0c</UETR>
       </PmtId>
-      <ChrgBr>SHA</ChrgBr>
-      <DbtrAgt>
+      <IntrBkSttlmAmt Ccy="EUR">7800000.00</IntrBkSttlmAmt><IntrBkSttlmDt>2025-02-25</IntrBkSttlmDt><InstgAgt><FinInstnId><BICFI>BRASBRRJXXX</BICFI></FinInstnId></InstgAgt><InstdAgt><FinInstnId><BICFI>BNPAFRPPXXX</BICFI></FinInstnId></InstdAgt><IntrmyAgt1><FinInstnId>
+            <BICFI>CITIUS33XXX</BICFI>
+          </FinInstnId>
+        </IntrmyAgt1><IntrmyAgt2><FinInstnId>
+            <BICFI>BNPAFRPPXXX</BICFI>
+          </FinInstnId>
+        </IntrmyAgt2><Dbtr><FinInstnId><BICFI>BRASBRRJXXX</BICFI></FinInstnId></Dbtr><DbtrAgt>
         <FinInstnId>
           <BICFI>BRASBRRJXXX</BICFI>
         </FinInstnId>
       </DbtrAgt>
 
-        <IntermediaryAgt1>
-          <FinInstnId>
-            <BICFI>CITIUS33XXX</BICFI>
-          </FinInstnId>
-        </IntermediaryAgt1>
-
-        <IntermediaryAgt2>
-          <FinInstnId>
-            <BICFI>BNPAFRPPXXX</BICFI>
-          </FinInstnId>
-        </IntermediaryAgt2>
-
-      <CdtrAgt>
+        <CdtrAgt>
         <FinInstnId>
           <BICFI>BNPAFRPPXXX</BICFI>
         </FinInstnId>
       </CdtrAgt>
       <Cdtr>
-        <Nm>BNP Paribas Paris</Nm>
-      </Cdtr>
+        <FinInstnId><BICFI>BNPAFRPPXXX</BICFI></FinInstnId></Cdtr>
       <CdtrAcct>
         <Id>
           <IBAN>FR7630006000011234567890189</IBAN>

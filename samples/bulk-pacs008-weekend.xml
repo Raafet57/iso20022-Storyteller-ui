@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
   <FIToFICstmrCdtTrf>
     <GrpHdr>
@@ -20,20 +20,25 @@
         <SvcLvl>
           <Cd>SEPA</Cd>
         </SvcLvl>
-        <ReqdExctnDt>2025-04-05</ReqdExctnDt>
-      </PmtTpInf>
+        </PmtTpInf>
       <IntrBkSttlmAmt Ccy="BRL">98000.00</IntrBkSttlmAmt>
-      <ChrgBr>SHA</ChrgBr>
+      <IntrBkSttlmDt>2025-04-05</IntrBkSttlmDt><ChrgBr>SHAR</ChrgBr>
 
+
+      <InstgAgt><FinInstnId><BICFI>BRASBRRJXXX</BICFI></FinInstnId></InstgAgt><InstdAgt><FinInstnId><BICFI>BCOMPTPLXXX</BICFI></FinInstnId></InstdAgt><IntrmyAgt1>
+          <FinInstnId>
+            <BICFI>BCOMPTPLXXX</BICFI>
+          </FinInstnId>
+        </IntrmyAgt1>
 
       <Dbtr>
         <Nm>Harmonia Importacao LTDA</Nm>
         <PstlAdr>
           <StrtNm>Av Paulista 55</StrtNm>
-          <TwnNm>São Paulo</TwnNm>
-          <Ctry>BR</Ctry>
           <PstCd>01310-100</PstCd>
-        </PstlAdr>
+        <TwnNm>Sao Paulo</TwnNm>
+          <Ctry>BR</Ctry>
+          </PstlAdr>
       </Dbtr>
       <DbtrAcct>
         <Id>
@@ -46,13 +51,7 @@
         </FinInstnId>
       </DbtrAgt>
 
-        <IntrmyAgt1>
-          <FinInstnId>
-            <BICFI>BCOMPTPLXXX</BICFI>
-          </FinInstnId>
-        </IntrmyAgt1>
-
-      <CdtrAgt>
+        <CdtrAgt>
         <FinInstnId>
           <BICFI>BCOMPTPLXXX</BICFI>
         </FinInstnId>
@@ -61,10 +60,10 @@
         <Nm>Lisboa Trading SA</Nm>
         <PstlAdr>
           <StrtNm>Rua Augusta 14</StrtNm>
-          <TwnNm>Lisbon</TwnNm>
-          <Ctry>PT</Ctry>
           <PstCd>1100-053</PstCd>
-        </PstlAdr>
+        <TwnNm>Lisbon</TwnNm>
+          <Ctry>PT</Ctry>
+          </PstlAdr>
       </Cdtr>
 
       <CdtrAcct>

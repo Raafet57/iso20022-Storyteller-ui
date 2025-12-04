@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
   <FIToFICstmrCdtTrf>
     <GrpHdr>
@@ -20,20 +20,25 @@
         <SvcLvl>
           <Cd>SEPA</Cd>
         </SvcLvl>
-        <ReqdExctnDt>2025-03-28</ReqdExctnDt>
-      </PmtTpInf>
+        </PmtTpInf>
       <IntrBkSttlmAmt Ccy="EUR">78000.00</IntrBkSttlmAmt>
-      <ChrgBr>SHA</ChrgBr>
+      <IntrBkSttlmDt>2025-03-28</IntrBkSttlmDt><ChrgBr>SHAR</ChrgBr>
 
+
+      <InstgAgt><FinInstnId><BICFI>HMBKFRPPXXX</BICFI></FinInstnId></InstgAgt><InstdAgt><FinInstnId><BICFI>NDEAFIHHXXX</BICFI></FinInstnId></InstdAgt><IntrmyAgt1>
+          <FinInstnId>
+            <BICFI>BNPAFRPPXXX</BICFI>
+          </FinInstnId>
+        </IntrmyAgt1>
 
       <Dbtr>
         <Nm>Harmony SME Payroll</Nm>
         <PstlAdr>
           <StrtNm>5 Avenue d'Italie</StrtNm>
-          <TwnNm>Paris</TwnNm>
-          <Ctry>FR</Ctry>
           <PstCd>75013</PstCd>
-        </PstlAdr>
+        <TwnNm>Paris</TwnNm>
+          <Ctry>FR</Ctry>
+          </PstlAdr>
       </Dbtr>
       <DbtrAcct>
         <Id>
@@ -46,13 +51,7 @@
         </FinInstnId>
       </DbtrAgt>
 
-        <IntrmyAgt1>
-          <FinInstnId>
-            <BICFI>BNPAFRPPXXX</BICFI>
-          </FinInstnId>
-        </IntrmyAgt1>
-
-      <CdtrAgt>
+        <CdtrAgt>
         <FinInstnId>
           <BICFI>NDEAFIHHXXX</BICFI>
         </FinInstnId>
@@ -61,10 +60,10 @@
         <Nm>Nordic Payroll Hub</Nm>
         <PstlAdr>
           <StrtNm>2 Fredrikinkatu</StrtNm>
-          <TwnNm>Helsinki</TwnNm>
-          <Ctry>FI</Ctry>
           <PstCd>00120</PstCd>
-        </PstlAdr>
+        <TwnNm>Helsinki</TwnNm>
+          <Ctry>FI</Ctry>
+          </PstlAdr>
       </Cdtr>
 
       <CdtrAcct>

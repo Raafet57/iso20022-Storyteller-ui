@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.009.001.08">
   <FICdtTrf>
     <GrpHdr>
       <MsgId>PNB-COVER-20250311</MsgId>
       <CreDtTm>2025-03-11T07:30:00+05:30</CreDtTm>
       <NbOfTxs>1</NbOfTxs>
-      <TtlIntrBkSttlmAmt Ccy="INR">450000000</TtlIntrBkSttlmAmt>
       <SttlmInf>
-        <SttlmMtd>COVE</SttlmMtd>
+        <SttlmMtd>INDA</SttlmMtd>
       </SttlmInf>
     </GrpHdr>
     <CdtTrfTxInf>
@@ -18,38 +17,26 @@
         <UETR>1d1d67e3-30b2-44fb-8d6a-7cfc8654d0e6</UETR>
       </PmtId>
       <IntrBkSttlmAmt Ccy="INR">450000000</IntrBkSttlmAmt>
-      <ChrgBr>SHA</ChrgBr>
-      <DbtrAgt>
+      <IntrBkSttlmDt>2025-02-25</IntrBkSttlmDt><InstgAgt><FinInstnId><BICFI>PUNBINBBXXX</BICFI></FinInstnId></InstgAgt><InstdAgt><FinInstnId><BICFI>IDIBINBBLAL</BICFI></FinInstnId></InstdAgt><IntrmyAgt1><FinInstnId>
+          <BICFI>PUNBINBBXXX</BICFI>
+          <Nm>PUNJAB NATIONAL BANK CPPC JAIPUR</Nm>
+        </FinInstnId>
+      </IntrmyAgt1><IntrmyAgt2><FinInstnId>
+          <BICFI>PUNBINBBXXX</BICFI>
+          <Nm>PUNJAB NATIONAL BANK CPPC KOLKATA</Nm>
+        </FinInstnId>
+      </IntrmyAgt2><Dbtr><FinInstnId><BICFI>PUNBINBBXXX</BICFI></FinInstnId></Dbtr><DbtrAgt>
         <FinInstnId>
           <BICFI>PUNBINBBXXX</BICFI>
         </FinInstnId>
       </DbtrAgt>
-      <IntermediaryAgt1>
-        <FinInstnId>
-          <BICFI>PUNB0746500</BICFI>
-          <Nm>PUNJAB NATIONAL BANK CPPC JAIPUR</Nm>
-        </FinInstnId>
-      </IntermediaryAgt1>
-      <IntermediaryAgt2>
-        <FinInstnId>
-          <BICFI>PUNB0747000</BICFI>
-          <Nm>PUNJAB NATIONAL BANK CPPC KOLKATA</Nm>
-        </FinInstnId>
-      </IntermediaryAgt2>
       <CdtrAgt>
         <FinInstnId>
           <BICFI>IDIBINBBLAL</BICFI>
         </FinInstnId>
       </CdtrAgt>
       <Cdtr>
-        <Nm>ICICI BANK LTD PANJRAPOLE</Nm>
-        <PstlAdr>
-          <StrtNm>SHIVALIK SHARDA HARMONY</StrtNm>
-          <TwnNm>AHMEDABAD</TwnNm>
-          <Ctry>IN</Ctry>
-          <PstCd>380015</PstCd>
-        </PstlAdr>
-      </Cdtr>
+        <FinInstnId><BICFI>IDIBINBBLAL</BICFI></FinInstnId></Cdtr>
       <CdtrAcct>
         <Id>
           <IBAN>IN98ICIC00083660004567890</IBAN>

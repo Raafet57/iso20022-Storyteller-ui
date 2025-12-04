@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
   <FIToFICstmrCdtTrf>
     <GrpHdr>
@@ -20,20 +20,31 @@
         <SvcLvl>
           <Cd>SEPA</Cd>
         </SvcLvl>
-        <ReqdExctnDt>2025-02-05</ReqdExctnDt>
-      </PmtTpInf>
+        </PmtTpInf>
       <IntrBkSttlmAmt Ccy="USD">2100000.00</IntrBkSttlmAmt>
-      <ChrgBr>SHA</ChrgBr>
+      <IntrBkSttlmDt>2025-02-05</IntrBkSttlmDt><ChrgBr>SHAR</ChrgBr>
 
+
+      <InstgAgt><FinInstnId><BICFI>ANDESCCOBXX</BICFI></FinInstnId></InstgAgt><InstdAgt><FinInstnId><BICFI>BESZPTPLXXX</BICFI></FinInstnId></InstdAgt><IntrmyAgt1>
+          <FinInstnId>
+            <BICFI>CITIUS33XXX</BICFI>
+          </FinInstnId>
+        </IntrmyAgt1>
+
+        <IntrmyAgt2>
+          <FinInstnId>
+            <BICFI>BESZPTPLXXX</BICFI>
+          </FinInstnId>
+        </IntrmyAgt2>
 
       <Dbtr>
         <Nm>Andes Commodities</Nm>
         <PstlAdr>
           <StrtNm>Av Libertadores 500</StrtNm>
-          <TwnNm>Bogota</TwnNm>
-          <Ctry>CO</Ctry>
           <PstCd>110111</PstCd>
-        </PstlAdr>
+        <TwnNm>Bogota</TwnNm>
+          <Ctry>CO</Ctry>
+          </PstlAdr>
       </Dbtr>
       <DbtrAcct>
         <Id>
@@ -46,19 +57,7 @@
         </FinInstnId>
       </DbtrAgt>
 
-        <IntrmyAgt1>
-          <FinInstnId>
-            <BICFI>CITIUS33XXX</BICFI>
-          </FinInstnId>
-        </IntrmyAgt1>
-
-        <IntrmyAgt2>
-          <FinInstnId>
-            <BICFI>BESZPTPLXXX</BICFI>
-          </FinInstnId>
-        </IntrmyAgt2>
-
-      <CdtrAgt>
+        <CdtrAgt>
         <FinInstnId>
           <BICFI>BESZPTPLXXX</BICFI>
         </FinInstnId>
@@ -66,11 +65,11 @@
       <Cdtr>
         <Nm>Lisbon Metals SA</Nm>
         <PstlAdr>
-          <StrtNm>Rua do Comércio 20</StrtNm>
-          <TwnNm>Lisbon</TwnNm>
-          <Ctry>PT</Ctry>
+          <StrtNm>Rua do Comercio 20</StrtNm>
           <PstCd>1100-003</PstCd>
-        </PstlAdr>
+        <TwnNm>Lisbon</TwnNm>
+          <Ctry>PT</Ctry>
+          </PstlAdr>
       </Cdtr>
 
       <CdtrAcct>

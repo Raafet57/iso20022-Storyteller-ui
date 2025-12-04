@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
   <FIToFICstmrCdtTrf>
     <GrpHdr>
       <MsgId>NO-REM-101</MsgId>
-      <CreDtTm>2025-02-22T17:00:00Z</CreDtTm>
+      <CreDtTm>2025-02-22T17:00:00+00:00</CreDtTm>
       <NbOfTxs>1</NbOfTxs>
       <SttlmInf>
         <SttlmMtd>INDA</SttlmMtd>
@@ -20,20 +20,19 @@
         <SvcLvl>
           <Cd>SEPA</Cd>
         </SvcLvl>
-        <ReqdExctnDt>2025-02-22</ReqdExctnDt>
-      </PmtTpInf>
+        </PmtTpInf>
       <IntrBkSttlmAmt Ccy="USD">425000.00</IntrBkSttlmAmt>
-      <ChrgBr>SHA</ChrgBr>
+      <IntrBkSttlmDt>2025-02-22</IntrBkSttlmDt><ChrgBr>SHAR</ChrgBr>
 
 
-      <Dbtr>
+      <InstgAgt><FinInstnId><BICFI>MDWESTUSXXX</BICFI></FinInstnId></InstgAgt><InstdAgt><FinInstnId><BICFI>SVBKUS6SXXX</BICFI></FinInstnId></InstdAgt><Dbtr>
         <Nm>Midwest Holdings</Nm>
         <PstlAdr>
           <StrtNm>455 Main Street</StrtNm>
-          <TwnNm>Chicago</TwnNm>
-          <Ctry>US</Ctry>
           <PstCd>60601</PstCd>
-        </PstlAdr>
+        <TwnNm>Chicago</TwnNm>
+          <Ctry>US</Ctry>
+          </PstlAdr>
       </Dbtr>
       <DbtrAcct>
         <Id>
@@ -55,10 +54,10 @@
         <Nm>Pacific Digital Corp</Nm>
         <PstlAdr>
           <StrtNm>888 Howard Street</StrtNm>
-          <TwnNm>San Francisco</TwnNm>
-          <Ctry>US</Ctry>
           <PstCd>94103</PstCd>
-        </PstlAdr>
+        <TwnNm>San Francisco</TwnNm>
+          <Ctry>US</Ctry>
+          </PstlAdr>
       </Cdtr>
 
       <CdtrAcct>
