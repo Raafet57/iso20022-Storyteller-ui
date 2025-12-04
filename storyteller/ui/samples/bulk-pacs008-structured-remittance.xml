@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
   <FIToFICstmrCdtTrf>
     <GrpHdr>
@@ -20,20 +20,25 @@
         <SvcLvl>
           <Cd>SEPA</Cd>
         </SvcLvl>
-        <ReqdExctnDt>2025-04-02</ReqdExctnDt>
-      </PmtTpInf>
+        </PmtTpInf>
       <IntrBkSttlmAmt Ccy="EUR">65000.25</IntrBkSttlmAmt>
-      <ChrgBr>SHA</ChrgBr>
+      <IntrBkSttlmDt>2025-04-02</IntrBkSttlmDt><ChrgBr>SHAR</ChrgBr>
 
+
+      <InstgAgt><FinInstnId><BICFI>BNPAFRPPCHS</BICFI></FinInstnId></InstgAgt><InstdAgt><FinInstnId><BICFI>AVIOITM1XXX</BICFI></FinInstnId></InstdAgt><IntrmyAgt1>
+          <FinInstnId>
+            <BICFI>BNPAFRPPCRT</BICFI>
+          </FinInstnId>
+        </IntrmyAgt1>
 
       <Dbtr>
         <Nm>BNP Paribas Chartres</Nm>
         <PstlAdr>
           <StrtNm>12 Rue du Docteur Mazet</StrtNm>
-          <TwnNm>Chartres</TwnNm>
-          <Ctry>FR</Ctry>
           <PstCd>28000</PstCd>
-        </PstlAdr>
+        <TwnNm>Chartres</TwnNm>
+          <Ctry>FR</Ctry>
+          </PstlAdr>
       </Dbtr>
       <DbtrAcct>
         <Id>
@@ -46,13 +51,7 @@
         </FinInstnId>
       </DbtrAgt>
 
-        <IntrmyAgt1>
-          <FinInstnId>
-            <BICFI>BNPAFRPPCRT</BICFI>
-          </FinInstnId>
-        </IntrmyAgt1>
-
-      <CdtrAgt>
+        <CdtrAgt>
         <FinInstnId>
           <BICFI>AVIOITM1XXX</BICFI>
         </FinInstnId>
@@ -61,10 +60,10 @@
         <Nm>AVIO S.P.A.</Nm>
         <PstlAdr>
           <StrtNm>VIA MAURO MACCHI 27</StrtNm>
-          <TwnNm>MILANO</TwnNm>
-          <Ctry>IT</Ctry>
           <PstCd>20124</PstCd>
-        </PstlAdr>
+        <TwnNm>MILANO</TwnNm>
+          <Ctry>IT</Ctry>
+          </PstlAdr>
       </Cdtr>
 
       <CdtrAcct>

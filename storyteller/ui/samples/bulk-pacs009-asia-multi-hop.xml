@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.009.001.08">
   <FICdtTrf>
     <GrpHdr>
       <MsgId>ASIA-MH-004</MsgId>
       <CreDtTm>2025-02-10T18:30:00+09:00</CreDtTm>
       <NbOfTxs>1</NbOfTxs>
-      <TtlIntrBkSttlmAmt Ccy="JPY">45000000.00</TtlIntrBkSttlmAmt>
       <SttlmInf>
         <SttlmMtd>INDA</SttlmMtd>
       </SttlmInf>
@@ -17,33 +16,25 @@
         <TxId>HMBKJPJT-MH-004</TxId>
         <UETR>140f1102-92cc-47c2-bf0a-69639102ca41</UETR>
       </PmtId>
-      <ChrgBr>SHA</ChrgBr>
-      <DbtrAgt>
+      <IntrBkSttlmAmt Ccy="JPY">45000000.00</IntrBkSttlmAmt><IntrBkSttlmDt>2025-02-25</IntrBkSttlmDt><InstgAgt><FinInstnId><BICFI>HMBKJPJTXXX</BICFI></FinInstnId></InstgAgt><InstdAgt><FinInstnId><BICFI>NDEAFIHHXXX</BICFI></FinInstnId></InstdAgt><IntrmyAgt1><FinInstnId>
+            <BICFI>HMBKUS44GAR</BICFI>
+          </FinInstnId>
+        </IntrmyAgt1><IntrmyAgt2><FinInstnId>
+            <BICFI>CITIUS33XXX</BICFI>
+          </FinInstnId>
+        </IntrmyAgt2><Dbtr><FinInstnId><BICFI>HMBKJPJTXXX</BICFI></FinInstnId></Dbtr><DbtrAgt>
         <FinInstnId>
           <BICFI>HMBKJPJTXXX</BICFI>
         </FinInstnId>
       </DbtrAgt>
 
-        <IntermediaryAgt1>
-          <FinInstnId>
-            <BICFI>HMBKUS44GAR</BICFI>
-          </FinInstnId>
-        </IntermediaryAgt1>
-
-        <IntermediaryAgt2>
-          <FinInstnId>
-            <BICFI>CITIUS33XXX</BICFI>
-          </FinInstnId>
-        </IntermediaryAgt2>
-
-      <CdtrAgt>
+        <CdtrAgt>
         <FinInstnId>
           <BICFI>NDEAFIHHXXX</BICFI>
         </FinInstnId>
       </CdtrAgt>
       <Cdtr>
-        <Nm>Nordic Bank Helsinki</Nm>
-      </Cdtr>
+        <FinInstnId><BICFI>NDEAFIHHXXX</BICFI></FinInstnId></Cdtr>
       <CdtrAcct>
         <Id>
           <IBAN>FI2112345600000777</IBAN>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
   <FIToFICstmrCdtTrf>
     <GrpHdr>
@@ -20,20 +20,31 @@
         <SvcLvl>
           <Cd>SEPA</Cd>
         </SvcLvl>
-        <ReqdExctnDt>2025-02-11</ReqdExctnDt>
-      </PmtTpInf>
+        </PmtTpInf>
       <IntrBkSttlmAmt Ccy="EUR">250000.00</IntrBkSttlmAmt>
-      <ChrgBr>SHA</ChrgBr>
+      <IntrBkSttlmDt>2025-02-11</IntrBkSttlmDt><ChrgBr>SHAR</ChrgBr>
 
+
+      <InstgAgt><FinInstnId><BICFI>BNPAFRPPBXL</BICFI></FinInstnId></InstgAgt><InstdAgt><FinInstnId><BICFI>HARMSESSXXX</BICFI></FinInstnId></InstdAgt><IntrmyAgt1>
+          <FinInstnId>
+            <BICFI>DEUTDEFFXXX</BICFI>
+          </FinInstnId>
+        </IntrmyAgt1>
+
+        <IntrmyAgt2>
+          <FinInstnId>
+            <BICFI>HMBKUS44GAR</BICFI>
+          </FinInstnId>
+        </IntrmyAgt2>
 
       <Dbtr>
         <Nm>BNP Paribas Brussels</Nm>
         <PstlAdr>
           <StrtNm>16 Rue Royale</StrtNm>
-          <TwnNm>Brussels</TwnNm>
-          <Ctry>BE</Ctry>
           <PstCd>1000</PstCd>
-        </PstlAdr>
+        <TwnNm>Brussels</TwnNm>
+          <Ctry>BE</Ctry>
+          </PstlAdr>
       </Dbtr>
       <DbtrAcct>
         <Id>
@@ -46,19 +57,7 @@
         </FinInstnId>
       </DbtrAgt>
 
-        <IntrmyAgt1>
-          <FinInstnId>
-            <BICFI>DEUTDEFFXXX</BICFI>
-          </FinInstnId>
-        </IntrmyAgt1>
-
-        <IntrmyAgt2>
-          <FinInstnId>
-            <BICFI>HMBKUS44GAR</BICFI>
-          </FinInstnId>
-        </IntrmyAgt2>
-
-      <CdtrAgt>
+        <CdtrAgt>
         <FinInstnId>
           <BICFI>HARMSESSXXX</BICFI>
         </FinInstnId>
@@ -66,11 +65,11 @@
       <Cdtr>
         <Nm>Harmony Nordic AB</Nm>
         <PstlAdr>
-          <StrtNm>Sveavägen 15</StrtNm>
-          <TwnNm>Stockholm</TwnNm>
-          <Ctry>SE</Ctry>
+          <StrtNm>Sveavagen 15</StrtNm>
           <PstCd>11157</PstCd>
-        </PstlAdr>
+        <TwnNm>Stockholm</TwnNm>
+          <Ctry>SE</Ctry>
+          </PstlAdr>
       </Cdtr>
 
       <CdtrAcct>

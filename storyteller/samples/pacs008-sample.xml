@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
   <FIToFICstmrCdtTrf>
     <GrpHdr>
@@ -17,7 +17,13 @@
         <UETR>f1d2f3a4-1111-4c5d-bbed-f5791b1f4412</UETR>
       </PmtId>
       <IntrBkSttlmAmt Ccy="USD">125000.00</IntrBkSttlmAmt>
-      <ChrgBr>OUR</ChrgBr>
+      <IntrBkSttlmDt>2025-03-21</IntrBkSttlmDt><ChrgBr>SHAR</ChrgBr>
+      <InstgAgt><FinInstnId><BICFI>BDCCBQBNXXX</BICFI></FinInstnId></InstgAgt><InstdAgt><FinInstnId><BICFI>HMBKUS44GAR</BICFI></FinInstnId></InstdAgt><IntrmyAgt1>
+        <FinInstnId>
+          <BICFI>BKTRUS33XXX</BICFI>
+          <Nm>THE BANK OF NEW YORK MELLON</Nm>
+        </FinInstnId>
+      </IntrmyAgt1>
       <UltmtDbtr>
         <Nm>ACME HOLDINGS LLC</Nm>
       </UltmtDbtr>
@@ -25,10 +31,10 @@
         <Nm>BANCO DI CARIBE N.V. BONAIRE</Nm>
         <PstlAdr>
           <StrtNm>KAYA GRANDI 22</StrtNm>
-          <TwnNm>KRALENDIJK</TwnNm>
-          <Ctry>BQ</Ctry>
           <PstCd>00000</PstCd>
-        </PstlAdr>
+        <TwnNm>KRALENDIJK</TwnNm>
+          <Ctry>BQ</Ctry>
+          </PstlAdr>
       </Dbtr>
       <DbtrAcct>
         <Id>
@@ -40,12 +46,6 @@
           <BICFI>BDCCBQBNXXX</BICFI>
         </FinInstnId>
       </DbtrAgt>
-      <IntrmyAgt1>
-        <FinInstnId>
-          <BICFI>BKTRUS33XXX</BICFI>
-          <Nm>THE BANK OF NEW YORK MELLON</Nm>
-        </FinInstnId>
-      </IntrmyAgt1>
       <CdtrAgt>
         <FinInstnId>
           <BICFI>HMBKUS44GAR</BICFI>
@@ -55,10 +55,10 @@
         <Nm>HARMONY BANK GARLAND</Nm>
         <PstlAdr>
           <StrtNm>515 WEST AVENUE</StrtNm>
-          <TwnNm>GARLAND</TwnNm>
-          <Ctry>US</Ctry>
           <PstCd>75042</PstCd>
-        </PstlAdr>
+        <TwnNm>GARLAND</TwnNm>
+          <Ctry>US</Ctry>
+          </PstlAdr>
       </Cdtr>
       <CdtrAcct>
         <Id>

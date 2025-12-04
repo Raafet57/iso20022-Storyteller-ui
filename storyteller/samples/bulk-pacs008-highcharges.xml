@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
   <FIToFICstmrCdtTrf>
     <GrpHdr>
@@ -20,20 +20,31 @@
         <SvcLvl>
           <Cd>SEPA</Cd>
         </SvcLvl>
-        <ReqdExctnDt>2025-01-12</ReqdExctnDt>
-      </PmtTpInf>
+        </PmtTpInf>
       <IntrBkSttlmAmt Ccy="USD">310000.00</IntrBkSttlmAmt>
-      <ChrgBr>OUR</ChrgBr>
+      <IntrBkSttlmDt>2025-01-12</IntrBkSttlmDt><ChrgBr>SHAR</ChrgBr>
 
+
+      <InstgAgt><FinInstnId><BICFI>HMBKPHMMXXX</BICFI></FinInstnId></InstgAgt><InstdAgt><FinInstnId><BICFI>WPACAU2SXXX</BICFI></FinInstnId></InstdAgt><IntrmyAgt1>
+          <FinInstnId>
+            <BICFI>CITIUS33XXX</BICFI>
+          </FinInstnId>
+        </IntrmyAgt1>
+
+        <IntrmyAgt2>
+          <FinInstnId>
+            <BICFI>WPACAU2SXXX</BICFI>
+          </FinInstnId>
+        </IntrmyAgt2>
 
       <Dbtr>
         <Nm>Harmony Bank Manila</Nm>
         <PstlAdr>
           <StrtNm>23 Ayala Avenue</StrtNm>
-          <TwnNm>Makati</TwnNm>
-          <Ctry>PH</Ctry>
           <PstCd>1226</PstCd>
-        </PstlAdr>
+        <TwnNm>Makati</TwnNm>
+          <Ctry>PH</Ctry>
+          </PstlAdr>
       </Dbtr>
       <DbtrAcct>
         <Id>
@@ -46,19 +57,7 @@
         </FinInstnId>
       </DbtrAgt>
 
-        <IntrmyAgt1>
-          <FinInstnId>
-            <BICFI>CITIUS33XXX</BICFI>
-          </FinInstnId>
-        </IntrmyAgt1>
-
-        <IntrmyAgt2>
-          <FinInstnId>
-            <BICFI>WPACAU2SXXX</BICFI>
-          </FinInstnId>
-        </IntrmyAgt2>
-
-      <CdtrAgt>
+        <CdtrAgt>
         <FinInstnId>
           <BICFI>WPACAU2SXXX</BICFI>
         </FinInstnId>
@@ -67,10 +66,10 @@
         <Nm>Sydney Harbour Services</Nm>
         <PstlAdr>
           <StrtNm>48 Barangaroo</StrtNm>
-          <TwnNm>Sydney</TwnNm>
-          <Ctry>AU</Ctry>
           <PstCd>2000</PstCd>
-        </PstlAdr>
+        <TwnNm>Sydney</TwnNm>
+          <Ctry>AU</Ctry>
+          </PstlAdr>
       </Cdtr>
 
       <CdtrAcct>

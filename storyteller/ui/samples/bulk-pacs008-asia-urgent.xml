@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
   <FIToFICstmrCdtTrf>
     <GrpHdr>
@@ -20,20 +20,25 @@
         <SvcLvl>
           <Cd>SEPA</Cd>
         </SvcLvl>
-        <ReqdExctnDt>2025-03-21</ReqdExctnDt>
-      </PmtTpInf>
+        </PmtTpInf>
       <IntrBkSttlmAmt Ccy="THB">1450000.75</IntrBkSttlmAmt>
-      <ChrgBr>OUR</ChrgBr>
+      <IntrBkSttlmDt>2025-03-21</IntrBkSttlmDt><ChrgBr>SHAR</ChrgBr>
 
+
+      <InstgAgt><FinInstnId><BICFI>HMBKTH2BXXX</BICFI></FinInstnId></InstgAgt><InstdAgt><FinInstnId><BICFI>MEGAHKHHXXX</BICFI></FinInstnId></InstdAgt><IntrmyAgt1>
+          <FinInstnId>
+            <BICFI>BKTRUS33XXX</BICFI>
+          </FinInstnId>
+        </IntrmyAgt1>
 
       <Dbtr>
         <Nm>Harmony Industrial Thai</Nm>
         <PstlAdr>
           <StrtNm>99 Narathiwas Road</StrtNm>
-          <TwnNm>Bangkok</TwnNm>
-          <Ctry>TH</Ctry>
           <PstCd>10120</PstCd>
-        </PstlAdr>
+        <TwnNm>Bangkok</TwnNm>
+          <Ctry>TH</Ctry>
+          </PstlAdr>
       </Dbtr>
       <DbtrAcct>
         <Id>
@@ -46,13 +51,7 @@
         </FinInstnId>
       </DbtrAgt>
 
-        <IntrmyAgt1>
-          <FinInstnId>
-            <BICFI>BKTRUS33XXX</BICFI>
-          </FinInstnId>
-        </IntrmyAgt1>
-
-      <CdtrAgt>
+        <CdtrAgt>
         <FinInstnId>
           <BICFI>MEGAHKHHXXX</BICFI>
         </FinInstnId>
@@ -61,10 +60,10 @@
         <Nm>Mega Components SDN BHD</Nm>
         <PstlAdr>
           <StrtNm>12 Jalan Bangsar</StrtNm>
-          <TwnNm>Kuala Lumpur</TwnNm>
-          <Ctry>MY</Ctry>
           <PstCd>59000</PstCd>
-        </PstlAdr>
+        <TwnNm>Kuala Lumpur</TwnNm>
+          <Ctry>MY</Ctry>
+          </PstlAdr>
       </Cdtr>
 
       <CdtrAcct>
