@@ -1,5 +1,9 @@
 ## Storyteller – ISO 20022 Narrative Generator
 
+> **Legacy prototype.** This standalone Storyteller UI/CLI is no longer the primary maintained product. Ongoing work has moved to **Payment Intelligence Modules**: https://github.com/Raafet57/payment-intelligence-modules
+>
+> Keep this repository for history, parser references, samples, and quick standalone demos. New UI/UX polish, tests, and public-site integration should happen in the consolidated suite.
+
 Client-side tool that ingests pacs.008 / pacs.009 / camt.053 XML and produces readable narratives (paragraph + concise modes) for ops and compliance analysts. No backend required; everything runs locally.
 
 ### Features
